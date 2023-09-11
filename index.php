@@ -32,7 +32,7 @@ function filterByAuthor($books, $author){
       
         foreach ($books as $book){
            if($book['author']===$author){
-            $filteredBooks = $book;
+            $filteredBooks[] = $book;
               }
         }
         return $filteredBooks; 
