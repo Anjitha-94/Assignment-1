@@ -7,34 +7,7 @@
     <title>Demo</title>
      </head>
   <body>
-    <?php
-       $books = [
-         [
-        'name' =>'Do Androids Dream of Electric Sheep',
-        'author'=>'Philip K.Dick',
-        'releaseYear'=>1968,
-        'purchaseURL'=>'http://example.com'
-        ],
-       [ 'name' =>'Project Hail Mary',
-        'author'=>'Andy Weir',
-        'releaseYear'=>2021,
-        'purchaseURL'=>'http://example.com'
-        ] ,
-        [ 'name' =>'The Martian',
-        'author'=>'Andy Weir',
-        'releaseYear'=>2011,
-        'purchaseURL'=>'http://example.com'
-        ] ,
-       
-       ];
-
-       $filteredBooks=array_filter($books,function($book){
-        return $book['releaseYear']>2000;
-       });
-        ?>
-
-
-<ul>
+   <ul>
   <?php foreach (filterByAuthor($books, 'Andy Weir') as $book) : ?>
        <li>
     <li>
@@ -48,3 +21,4 @@
      
       </body>
 </html>
+//A new file for php  
